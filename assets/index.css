@@ -69,10 +69,10 @@ input{
 
 
   @keyframes salute {
-    0%   {display: block;}
+    0%   {transform: rotate(0deg);}
     25%  {transform: rotate(-20deg);}
     75%  {transform: rotate(20deg);}
-    100% {display: block;}
+    100% {transform: rotate(0deg);}
   }
 
   @media (min-width: 768px) {
