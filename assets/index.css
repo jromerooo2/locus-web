@@ -13,8 +13,6 @@ input{
     border-color: #271A2B;
     color: #000;
   }
-
-
   #btn-custom2{
     border-color: #716EA7;
     color: #000;
@@ -37,22 +35,30 @@ input{
     color: #716EA7;
   }
   .text-dark-purple{
-    color: #271A2B;
+    color: #442D3F;
   }
   .locus-letter{
     font-family: 'Poppins', sans-serif;
   }
   .activee{
-    color: #000;
     text-decoration: none;
     margin: 4px;
+    display: inline-block;
+    color: #271A2B;
     padding: 12px;
   }
-  .activee:hover{
-    background-color: #271A2B;
-    color: #fff;
-    
-    border-radius: 25px;  
+  .activee::after{
+    color: #271A2B;
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width .3s;
+  }
+  .activee:hover::after {   
+    color: #271A2B; 
+    width: 100%;
   }
   .background-img{
       background-image: url(bg5.svg);
@@ -68,7 +74,11 @@ input{
   }
   .hand{
     width: 280px;
-    animation: salute 2s infinite;
+    animation: salute 2.5s infinite;
+  }
+
+  .nav-masthead{
+    display: none;
   }
 
 
@@ -80,6 +90,9 @@ input{
   }
 
   @media (min-width: 768px) {
+    .nav-masthead{
+     display: block;
+    }
     .bd-placeholder-img-lg {
       font-size: 3.5rem !important;
     }
