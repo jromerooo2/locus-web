@@ -35,6 +35,9 @@ input{
   .text-purple{
     color: #716EA7;
   }
+  .text-dark-purple{
+    color: #271A2B;
+  }
   .locus-letter{
     font-family: 'Poppins', sans-serif;
   }
