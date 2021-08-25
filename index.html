@@ -15,6 +15,9 @@
 
   </head>
   <body class="text-center text-white bg-white">
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     
     <section class="d-flex vh-100">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column background-img">
@@ -24,6 +27,7 @@
               <nav class="nav nav-masthead justify-content-center">
                 <a class="activee" data-scroll  href="#info">Información</a>
                 <a class="activee" data-scroll href="#team">Equipo</a>
+                <a class="activee" data-scroll href="#contacto">FAQ</a>
                 <a class="activee" data-scroll href="#contacto">Contacto</a>
               </nav>
               <img src="assets/logo2.png"  class="show-on-phone" style="height: 150px" alt="">
@@ -90,8 +94,11 @@
 </div>
 
 </section>
+<section id="FAQ">
 
-<section class=" text-center py-5 bg-hand" id="team">
+</section>
+
+<section class="text-center py-5 bg-hand" id="team">
   <div class="container">
     <div class="header my-2">
       <p class="text-dark-purple">Conoce el Equipo🏁.</p>
@@ -158,7 +165,7 @@
     <div class="rounded p-2 text-center text-black overflow-hidden">
       <div class="my-3 p-3">
 
-        <form action="#" method="POST" autocomplete="off">
+        <form action="mailto:you@yourdmainhere.com" method="post" autocomplete="off">
           <div class="form-group">
           <input class="rounded-pill" name="name" placeholder="Tu Nombre" type="text"><br>
           <input class="rounded-pill mt-3" placeholder="Tu Correo" name="email" type="text"><br>
@@ -181,7 +188,10 @@
 
 </section>
 
+
+
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="assets/js/app.js"></script>
 
