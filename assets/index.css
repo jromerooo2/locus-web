@@ -13,24 +13,68 @@ input{
   text-indent: 10px;
 }
 
+#logo{
+  vertical-align: text-bottom;
+}
+
 
 
 .btn-custom {
     border-color: #271A2B;
     color: #000;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #271A2B;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
   }
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #271A2B;
+  }
+  .btn-custom {
+    border-color: #271A2B;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #271A2B;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+  }
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #271A2B;
+    color: #fff;
+  }
+  .slide_right2:hover {
+    box-shadow: inset 400px 0 0 0 #716EA7;
+    color: #fff;
+  }
+
   #btn-custom2{
-    background-color: white;
     border-color: #716EA7;
     color: #000;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #716EA7;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
   }
-  .btn-custom:hover {
-    background-color:#271A2B;
-    color: #fff;
-    stroke: #fff;
-  }
+
   .purple-section{
     background-color: #716EA7;
+    background-image: url(locaation.png);
+    background-attachment: fixed;
+    background-position:middle;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   #btn-custom2:hover{
@@ -80,7 +124,7 @@ input{
     background-color: #271A2B;
   }
   .hand{
-    width: 280px;
+    width: 260px;
     animation: salute 2.5s infinite;
   }
 
@@ -91,8 +135,8 @@ input{
 
   @keyframes salute {
     0%   {transform: rotate(0deg);}
-    35%  {transform: rotate(-20deg);}
-    75%  {transform: rotate(20deg);}
+    35%  {transform: rotate(-10deg);}
+    35%  {transform: rotate(20deg);}
     100% {transform: rotate(0deg);}
   }
   @keyframes float {
@@ -103,6 +147,9 @@ input{
   }
 
   @media (min-width: 900px) {
+    .purple-section{
+      background-position:top;
+    }
     .nav-masthead{
      display: block;
     }
