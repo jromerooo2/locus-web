@@ -58,14 +58,6 @@ input{
   #btn-custom2{
     border-color: #716EA7;
     color: #000;
-    display: inline-block;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #716EA7;
-    -webkit-transition: ease-out 0.5s;
-    -moz-transition: ease-out 0.5s;
-    transition: ease-out 0.5s;
   }
 
   .purple-section{
