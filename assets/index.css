@@ -64,7 +64,7 @@ input{
     background-color: #716EA7;
     background-image: url(locaation.png);
     background-attachment: fixed;
-    background-position:middle;
+    background-position:top;
     background-repeat: no-repeat;
     background-size: contain;
   }
