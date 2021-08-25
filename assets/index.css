@@ -53,7 +53,7 @@ input{
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
-  -webkit-animation: loader-inner 2s infinite ease-in; /* Safari */
+  -webkit-animation: loader-inner 2s infinite ease-in;
 }
 
 @keyframes loader {
@@ -135,7 +135,6 @@ input{
 
   .purple-section{
     background-color: #716EA7;
-    background-image: url(locaation.png);
     background-attachment: fixed;
     background-position:top;
     background-repeat: no-repeat;
@@ -146,6 +145,9 @@ input{
     background-color: #716EA7;
     color: #fff;
     stroke: #fff;
+  }
+  .display-2{
+    margin-bottom: 0px;
   }
   .text-purple{
     color: #716EA7;
@@ -189,7 +191,7 @@ input{
     animation: float2 5s infinite;
   }
   .background-img{
-      background-image: url(bg5.svg);
+      background-image: url(imgs/bg5.svg);
       background-size: cover;      
   }
   .header{

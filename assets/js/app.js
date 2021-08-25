@@ -12,7 +12,7 @@ $(window).on("load",function(){
     
     gsap.to("#info-text", {
         duration: 1,
-    }) }, 1000);
+    }) }, 100);
 
 });
 
