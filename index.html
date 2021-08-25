@@ -22,7 +22,7 @@
           <header class="mb-auto d-flex align-items-center justify-content-evenly">
 
               <nav class="nav nav-masthead justify-content-center">
-                <a class="activee" data-scroll href="#info">Información</a>
+                <a class="activee" data-scroll  href="#info">Información</a>
                 <a class="activee" data-scroll href="#team">Equipo</a>
                 <a class="activee" data-scroll href="#contacto">Contacto</a>
               </nav>
@@ -186,18 +186,8 @@
 <script src="assets/js/app.js"></script>
 
 <script>
-  const noreload = ()=>{
-    let btn = document.getElementById("btn");
-    btn.addEventListener("click", (e)=>{
-      e.preventDefault();
-    })
-  }
-</script>
-<script>
 	var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 400,
-    speedAsDuration: true,
-    easeOutQuad:true
+    speed: 300
   });
 </script>
 

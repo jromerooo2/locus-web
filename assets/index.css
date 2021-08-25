@@ -103,6 +103,9 @@ input{
     color: #271A2B; 
     width: 100%;
   }
+  .activee:hover{
+    color: #000;
+  }
   .background-img{
       background-image: url(bg5.svg);
       background-size: cover;      
