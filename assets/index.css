@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
 
+.text-area{
+  resize: none;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -9,11 +12,15 @@ nav{
 input{
   text-indent: 10px;
 }
+
+
+
 .btn-custom {
     border-color: #271A2B;
     color: #000;
   }
   #btn-custom2{
+    background-color: white;
     border-color: #716EA7;
     color: #000;
   }
@@ -87,6 +94,12 @@ input{
     35%  {transform: rotate(-20deg);}
     75%  {transform: rotate(20deg);}
     100% {transform: rotate(0deg);}
+  }
+  @keyframes float {
+    0%   {display: block;}
+    35%  {transform: translateY(-15%);}
+    100% {display: block;}
+    100% {display: block;}
   }
 
   @media (min-width: 900px) {
