@@ -183,7 +183,10 @@ input{
   }
 
   .float{
-    animation: float 9s infinite;
+    animation: float 5s infinite;
+  }
+  .float2{
+    animation: float2 5s infinite;
   }
   .background-img{
       background-image: url(bg5.svg);
@@ -218,6 +221,12 @@ input{
     35%  {transform: translateY(-15%);}
     100% {display: block;}
   }
+  @keyframes float2 {
+    0%   {display: block;}
+    35%  {transform: translateY(15%);}
+    100% {display: block;}
+  }
+
 
   @media (min-width: 900px) {
     .purple-section{
