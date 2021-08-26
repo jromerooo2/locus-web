@@ -5,6 +5,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .accordion-button{
   width:50%
@@ -26,6 +28,12 @@ input{
 }
 #logo{
   vertical-align: text-bottom;
+}
+.txt{
+  font-family: 'Staatliches', cursive;
+}
+.margin-200{
+  margin-bottom:200px;
 }
 .loader {
   display: inline-block;
@@ -140,7 +148,9 @@ input{
     background-repeat: no-repeat;
     background-size: contain;
   }
-
+  .vh-full{
+    height: 100vh;
+  }
   #btn-custom2:hover{
     background-color: #716EA7;
     color: #fff;
@@ -155,7 +165,7 @@ input{
   }
   .text-dark-purple{
     color: #442D3F;
-
+    font-family: 'Staatliches', cursive;
   }
   .locus-letter{
     font-family: 'Poppins', sans-serif;
@@ -206,6 +216,9 @@ input{
     width: 260px;
     animation: salute 2.5s infinite;
   }
+  .look{
+    height: 150px;
+  }
 
   .nav-masthead{
     display: none;
@@ -231,6 +244,9 @@ input{
 
 
   @media (min-width: 900px) {
+    .margin-200{
+      margin-bottom:0px;
+    }
     .purple-section{
       background-position:top;
     }
@@ -242,5 +258,8 @@ input{
     }
     .hand{
       width: 400px;
+    }
+    .look{
+      height: 200px;
     }
   }

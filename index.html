@@ -16,15 +16,16 @@
   </head>
   <body class="text-center text-white bg-white">
     <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
+      <span class="loader"><span class="loader-inner"></span></span><br>
     </div>
     
-    <section class="d-flex vh-100">
+    <section id="inicio" class="d-flex vh-full">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column background-img">
     
           <header class="mb-auto d-flex align-items-center justify-content-evenly">
 
               <nav class="nav nav-masthead justify-content-center">
+                <a class="activee" data-scroll  href="#noticias">Noticias</a>
                 <a class="activee" data-scroll  href="#info">Información</a>
                 <a class="activee" data-scroll href="#FAQ">FAQ</a>
                 <a class="activee" data-scroll href="#team">Equipo</a>
@@ -47,9 +48,56 @@
     
         </div>
     </section>
+<section id="noticias" class="">
+  <div class=" d-flex align-items-center">
+  <div class="container ">
+    <div class="jumbotron d-md-flex justify-content-center align-items-center p-3 p-md-5 text-white rounded purple-section text-center">
+      <div class="col-md-6">
+        <h1 class="display-4 font-italic ">¿Que dice el mundo sobre nosotros?</h1>
+        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+      </div>
+      <div class="col-md-6">
+        <img class="card-img-right flex-auto look" src="assets/imgs/look.png"  alt="Card image cap">
+      </div>
+    </div>
 
-<section id="info" class="">
-  <div style="   background-image: url(assets/imgs/locaation.png);" class="position-relative overflow-hidden p-1 p-md-5  text-center purple-section ">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start text-start">
+            <strong class="d-inline-block mb-2 text-warning">Seguridad</strong>
+            <h3 class="mb-0">
+              <a class="text-dark text-decoration-none" >Como Locus System se ha convertido en uno de lo más seguros</a>
+            </h3>
+            <div class="m-1 text-muted">Actualidad</div>
+            <p class="card-text mb-auto text-black">This is a wider card with supporting text below as a natural lead-in to additional contentasdadad.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none  d-md-block m-4" src="assets/imgs/lock.png" height="220px" alt="Card image cap">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card  flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body  d-flex flex-column align-items-start text-start">
+            <strong class="d-inline-block mb-2 text-success">Estilo de Vida</strong>
+            <h3 class="mb-0">
+              <a class="text-dark text-decoration-none" href="#">Incrementa tu productividad con Locus System</a>
+            </h3>
+            <div class="m-1 text-muted">Actualidad</div>
+            <p class="card-text mb-auto text-black">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <img class="card-img-right flex-auto d-none d-md-block m-2" src="assets/imgs/prod.png" height="210px" alt="Card image cap">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="info">
+  <div style="background-image: url(assets/imgs/locaation.png);" class="position-relative overflow-hidden p-1 p-md-5  text-center purple-section ">
     <div id="info-text" class="col-md-5 mx-auto p-4 my-5">
       <h1 class="header">Locus Systems</h1>
       <p class="lead font-weight-normal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sit alias consequuntur cum obcaecati vero laboriosam impedit nemo explicabo saepe ullam labore ea minima inventore officiis quod, enim, dolor ducimus.</p>
@@ -95,8 +143,8 @@
 
 </section>
 
-<section id="FAQ" class="vh-50 ">
-  <h1 class="text-purple display-2">Preguntas Frecuentes - locus:</h1>
+<section id="FAQ" class="vh-50">
+  <h1 class="text-dark-purple display-2">Preguntas Frecuentes - locus:</h1>
   <div class="d-lg-flex align-items-center justify-content-center">
     <img class="float2" src="assets/imgs/like.png" height="350px" alt="">
     <div class="questions container">
