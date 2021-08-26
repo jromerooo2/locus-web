@@ -18,3 +18,7 @@ $(window).on("load",function(){
 
 });
 
+const scrolltosome = (id)=>{
+    gsap.to(window, {duration: 2, scrollTo: id});
+}
+

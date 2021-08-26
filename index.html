@@ -24,13 +24,13 @@
           <header class="mb-auto d-flex align-items-center justify-content-between">
 
               <nav class="nav nav-masthead justify-content-center">
-                <a class="activee" data-scroll  href="#noticias">Noticias</a>
-                <a class="activee" data-scroll  href="#info">Información</a>
-                <a class="activee" data-scroll href="#FAQ">FAQ</a>
-                <a class="activee" data-scroll href="#team">Equipo</a>
-                <a class="activee" data-scroll href="#contacto">Contacto</a>
+                <a class="activee" onclick="scrolltosome('#noticias')"  href="#">Noticias</a>
+                <a class="activee" onclick="scrolltosome('#info')"  href="#">Información</a>
+                <a class="activee" onclick="scrolltosome('#FAQ')" href="#">FAQ</a>
+                <a class="activee" onclick="scrolltosome('#team')" href="#">Equipo</a>
+                <a class="activee" onclick="scrolltosome('#contacto')" href="#">Contacto</a>
               </nav>
-              <img src="assets/imgs/L_S_U.png"  class="show-on-phone" style="height: 150px" alt="">
+              <img src="assets/imgs/logo2.png"  class="show-on-phone" style="height: 150px" alt="">
               
           </header>
     
@@ -272,15 +272,18 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="assets/js/app.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 300
-  });
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1500
+    });
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
