@@ -7,11 +7,13 @@ $(window).on("load",function(){
      $(".loader-wrapper").fadeOut("slow");
     document.getElementById("logo").style.display = "block"
     gsap.to("#logo", {
-        duration: 1, y: -200
+        duration: 1, 
+        y: -240
     });
     
     gsap.to("#info-text", {
         duration: 1,
+        y: '-10%'
     }) }, 100);
 
 });

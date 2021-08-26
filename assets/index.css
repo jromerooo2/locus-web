@@ -8,15 +8,6 @@ body{
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-.accordion-button{
-  width:50%
-}
-.accordion-body{
-  width:20%
-}
-.accordion-header{
-  width: 50%;
-}
 nav{
   margin-left: 5rem;
 }
@@ -26,14 +17,9 @@ input{
 #FAQ{
   margin-top: 120px;
 }
-#logo{
-  vertical-align: text-bottom;
-}
+
 .txt{
   font-family: 'Staatliches', cursive;
-}
-.margin-200{
-  margin-bottom:200px;
 }
 .loader {
   display: inline-block;
