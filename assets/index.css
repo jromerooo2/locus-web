@@ -3,10 +3,27 @@
 .text-area{
   resize: none;
 }
+
+.link{
+  color: gray;
+  text-decoration: none;
+  list-style: none;
+}
+footer{
+  height: 100px;
+}
+.link:hover{
+  color: #c9c8c5;
+  cursor: pointer;
+}
 body{
     font-family: 'Poppins', sans-serif;
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+.dark-sec{
+  background-color: #271A2B;
+  color: #Fff;
 }
 nav{
   margin-left: 5rem;
