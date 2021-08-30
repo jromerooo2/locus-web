@@ -1,6 +1,7 @@
 document.getElementById("logo").style.display = "none"
 
-//listening to window load 
+//listening to window load and adding 
+//100 ms to make longer the animation
 
 $(window).on("load",function(){
     setTimeout(function(){    
@@ -18,7 +19,4 @@ $(window).on("load",function(){
 
 });
 
-const scrolltosome = (id)=>{
-    gsap.to(window, {duration: 2, scrollTo: id});
-}
 
