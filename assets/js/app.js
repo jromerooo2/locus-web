@@ -9,7 +9,7 @@ $(window).on("load",function(){
     document.getElementById("logo").style.display = "block"
     gsap.to("#logo", {
         duration: 1, 
-        y: -240
+        y:toPX("-26vh")
     });
     
     gsap.to("#info-text", {
@@ -18,6 +18,10 @@ $(window).on("load",function(){
     }) }, 100);
 
 });
+
+function toPX(value) {
+    return parseFloat(value) / 100 * (/vh/gi.test(value) ? window.innerHeight : window.innerWidth);
+}
 
     /*
     :  .         .::       ':        ::        ::       :.y. :     
