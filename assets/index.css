@@ -5,7 +5,7 @@
 }
 
 .link{
-  color: gray;
+  color: #fff;
   text-decoration: none;
   list-style: none;
 }
@@ -150,6 +150,10 @@ input{
     background-position:top;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .purple-bg{
+    background-color: #716EA7;
   }
   .vh-full{
     height: 100vh;
