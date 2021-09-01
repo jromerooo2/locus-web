@@ -3,6 +3,9 @@
 .text-area{
   resize: none;
 }
+.show-on-phone{
+  display: block;
+}
 
 .link{
   color: #fff;
@@ -33,6 +36,13 @@ input{
 }
 #FAQ{
   margin-top: 120px;
+}
+.bg-purple{
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.19);
+
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .txt{
@@ -230,6 +240,24 @@ input{
   .nav-masthead{
     display: none;
   }
+  .fa-1x {
+    font-size: 1.5rem;
+    }
+    .navbar-toggler.toggler-example {
+    cursor: pointer;
+    }
+    .dark-blue-text {
+    color: #0A38F5;
+    }
+    .dark-pink-text {
+    color: #AC003A;
+    }
+    .dark-amber-text {
+    color: #ff6f00;
+    }
+    .dark-teal-text {
+    color: #004d40;
+    }
 
 
   @keyframes salute {
@@ -250,6 +278,7 @@ input{
   }
 
 
+
   @media (min-width: 900px) {
     .margin-200{
       margin-bottom:0px;
@@ -268,5 +297,8 @@ input{
     }
     .look{
       height: 200px;
+    }
+    .show-on-phone{
+      display: none;
     }
   }

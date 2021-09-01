@@ -21,8 +21,45 @@
     </div>
     
     <section id="inicio" class="d-flex vh-full">
-        <div class="p-3 mx-auto cover-container d-flex w-100 align-items-center h-100 flex-column background-img">    
-          <header class="mb-auto d-flex align-items-center justify-content-between">
+
+        <div class="p-3 mx-auto cover-container d-flex w-100 justify-content-between align-items-center h-100 flex-column background-img">    
+          
+          <header class="mb-auto d-flex align-items-center justify-content-between text-black">
+            <nav id="navbar-phone" class="text-start start p-3 container-fluid show-on-phone  navbar-light fixed-top">
+              <div class="container-fluid">
+                <button class="border border-white navbar-toggler d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa fa-bars m-2"></i>
+                    <h1 class="m-2" style="font-family: Poppins; font-weight:bold">Locus Systems</h1>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <img src="assets/imgs/logo2.png" style="height: 120px" alt="">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class=" activee" aria-current="page" href="#noticias">Noticias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="activee" data-scroll href="#info">Información</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="activee" data-scroll href="#FAQ">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="activee" data-scroll href="#team">Equipo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="activee" data-scroll href="#contacto">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            
+
 
               <nav class="nav nav-masthead justify-content-center">
                 <a class="activee" data-scroll  href="#noticias">Noticias</a>
@@ -31,7 +68,7 @@
                 <a class="activee" data-scroll href="#team">Equipo</a>
                 <a class="activee" data-scroll href="#contacto">Contacto</a>
               </nav>
-              <img src="assets/imgs/logo2.png"  class="show-on-phone" style="height: 150px" alt="">
+              <img src="assets/imgs/logo2.png" class="nav-masthead" style="height: 150px" alt="">
           </header>
     
           <main id="logo" class="px-3">
@@ -39,7 +76,7 @@
 
             <h3 class="mb-3 text-black locus-letter">Locus Systems.</h3>
             <p class="lead">
-              <a data-scroll href="#info" class="p-3 btn btn-md btn-custom slide_right rounded-pill">Conoce Más</a>
+              <a data-scroll href="#info" class="p-3 btn btn-md slide_right rounded-pill">Conoce Más</a>
             </p>
           </main>
     
@@ -289,8 +326,6 @@
       <a class="p-3 link">Github</a>
     </ul>
 </footer>
-
-
 
 
 <!--jquery no esta muerto😡 -->

@@ -23,6 +23,23 @@ function toPX(value) {
     return parseFloat(value) / 100 * (/vh/gi.test(value) ? window.innerHeight : window.innerWidth);
 }
 
+const navbar  = $("#navbar-phone")
+const toggler = $(".navbar-toggler")
+$(window).scroll(()=>{
+    if(screen.width <= 900){
+        navbar.addClass("bg-purple")
+        toggler.addClass("text-white")
+    }
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+        if(screen.width <= 900){
+            navbar.removeClass("bg-purple")
+            toggler.removeClass("text-white")
+        }
+    }, 450));
+
+})
+
     /*
     :  .         .::       ':        ::        ::       :.y. :     
     .: :::       :" ::       :        ::      .:'':      .yyy.':    
