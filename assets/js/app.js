@@ -1,5 +1,21 @@
 document.getElementById("logo").style.display = "none"
 
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
 //listening to window load and adding 
 //100 ms to make longer the animation
 
@@ -25,6 +41,7 @@ function toPX(value) {
 
 const navbar  = $("#navbar-phone")
 const toggler = $(".navbar-toggler")
+
 $(window).scroll(()=>{
     if(screen.width <= 900){
         navbar.addClass("bg-purple")
