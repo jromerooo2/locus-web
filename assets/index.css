@@ -182,8 +182,9 @@ input{
     -moz-transition: ease-out 0.5s;
     transition: ease-out 0.5s;
   }
-  .slide_right:hover {
+  .btn-custom:hover {
     box-shadow: inset 400px 0 0 0 #271A2B;
+    color: #fff;
   }
   .btn-custom {
     border-color: #271A2B;
@@ -196,10 +197,6 @@ input{
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     transition: ease-out 0.5s;
-  }
-  .slide_right:hover {
-    box-shadow: inset 400px 0 0 0 #271A2B;
-    color: #fff;
   }
   .slide_right2:hover {
     box-shadow: inset 400px 0 0 0 #716EA7;
@@ -292,9 +289,9 @@ input{
     font-weight: bold;
   }
 
-  .row-cards{
-    display: block;
-  }
+    .row-cards{
+      display: flex !important; 
+    }
 
   .p-1{
     margin: 5px;
@@ -356,10 +353,21 @@ input{
     100% {display: block;}
   }
 
-@media(min-width:1200px ){
+@media(max-width:900px ){
   .row-cards{
-    display: flex;
-    margin: 10px;
+    max-height: 700px;
+    max-width: auto;
+    display: flex !important; 
+    overflow-x: auto;
+  }
+
+  .row-cards::-webkit-scrollbar{
+      width: 0;
+  }
+  .cards{
+    min-width: 350px;
+    height: 600px;
+    margin-right: 2px;
   }
 }
 
