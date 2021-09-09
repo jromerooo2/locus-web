@@ -16,6 +16,14 @@ btn.on('click', function(e) {
 });
 
 
+$("#btn-learn").on('click', (e)=>{
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#info").offset().top
+    }, 300);;
+})
+
+
 //listening to window load and adding 
 //100 ms to make longer the animation
 
