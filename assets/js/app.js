@@ -20,9 +20,19 @@ $("#btn-learn").on('click', (e)=>{
     e.preventDefault();
     $('html, body').animate({
         scrollTop: $("#info").offset().top
-    }, 300);;
+    }, 300);
 })
 
+var animated = false;
+$(document).on('scroll', function() {
+    if (screen.width <= 900 && $(this).scrollTop() >= $('#troll').position().top && !animated ) {
+        animated = true;
+        $('#exampleModalCenter').modal('show')
+        $('#btn-close').on('click', ()=>{
+            $('#exampleModalCenter').modal('hide')
+        })
+    }
+  })
 
 //listening to window load and adding 
 //100 ms to make longer the animation
@@ -39,7 +49,7 @@ $(window).on("load",function(){
     gsap.to("#info-text", {
         duration: 1,
         y: '-10%'
-    }) }, 100);
+    }) }, 10);
 
 });
 

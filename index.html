@@ -11,6 +11,10 @@
       href="assets/imgs/LS.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="//unpkg.com/alpinejs" defer></script>
+
+
 <meta name="theme-color" content="#7952b3">
 <link rel="stylesheet" href="assets/index.css">
 
@@ -92,37 +96,53 @@
       <p class="lead font-weight-normal">Un sistema de administración completo, que te permite controlar, programar y organizar tus viajes, con la opción de darle seguimiento a las unidades de transporte activas.</p>
     </div>
   </div>
-
-  <div class="row-cards">
-      <div class="overflow-hidden  rounded text-center text-black col-xl-3  bg-light cards">
-        <div class="py-3 my-3">
-          <h2 class="header">Ubicación en tiempo real</h2>
-          <p class="lead">Conoce la ubicación de tus unidades en todo momento.</p>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="text-black">Haz Scroll horizontal para pasar las tarjetas.</h1>
+          <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_z6mrnqdw.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
         </div>
-        <img src="assets/imgs/L_S.png" style="height: 320px;"  alt="">
-      </div>
-      <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
-        <div class="py-3 my-3">
-          <h2 class="header">Administración de Accesos</h2>
-          <p class="lead">Administra los usuarios y los permisos que obtienen.</p>
+        <div class="modal-footer">
+          <button type="button" class="btn purple-bg text-white" id="btn-close" data-dismiss="modal">Cerrar</button>
         </div>
-        <img src="assets/imgs/key.png" style="height: 250px; margin-top: 3rem;" alt="">
       </div>
-      <div class="overflow-hidden rounded text-center text-black col-xl-3 bg-light cards">
-        <div class="p-3 my-3">
-          <h2 class="header">Estadísticas Reales</h2>
-          <p class="lead">Controla gastos de combustible y metros recorridos por unidad.</p>
-        </div>
-        <img src="assets/imgs/graf.png" style="height: 250px; margin-bottom: 3rem;" alt="">
-      </div>
-      <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
-        <div class="py-3 my-3">
-          <h2 class="header">Control de Mantenimientos</h2>
-          <p class="lead">Registra los mantenimientos con fechas y costes.</p>
-        </div>
-        <img src="assets/imgs/herramientasw.png" style="height: 250px; margin-bottom: 3rem;" alt="">
-      </div>
+    </div>
   </div>
+  <div id="troll" style="height: 20px;">
+  </div>
+<div id="cards">
+  <div class="row-cards" >
+    <div class="overflow-hidden  rounded text-center text-black col-xl-3  bg-light cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Ubicación en tiempo real</h2>
+        <p class="lead">Conoce la ubicación de tus unidades en todo momento.</p>
+      </div>
+      <img src="assets/imgs/L_S.png" style="height: 320px;"  alt="">
+    </div>
+    <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Administración de Accesos</h2>
+        <p class="lead">Administra los usuarios y los permisos que obtienen.</p>
+      </div>
+      <img src="assets/imgs/key.png" style="height: 250px; margin-top: 3rem;" alt="">
+    </div>
+    <div class="overflow-hidden rounded text-center text-black col-xl-3 bg-light cards">
+      <div class="p-3 my-3">
+        <h2 class="header">Estadísticas Reales</h2>
+        <p class="lead">Controla gastos de combustible y metros recorridos por unidad.</p>
+      </div>
+      <img src="assets/imgs/graf.png" style="height: 250px; margin-bottom: 3rem;" alt="">
+    </div>
+    <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Control de Mantenimientos</h2>
+        <p class="lead">Registra los mantenimientos con fechas y costes.</p>
+      </div>
+      <img src="assets/imgs/herramientasw.png" style="height: 250px; margin-bottom: 3rem;" alt="">
+    </div>
+</div>
+</div>
 </div>
 
 </section>
@@ -139,6 +159,7 @@
       </div>
 
     </div>
+  
 
     <div class="mb-2 row">
       <div class="col-md-6">
