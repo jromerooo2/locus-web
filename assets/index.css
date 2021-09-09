@@ -359,10 +359,6 @@ input{
 @media(min-width:1200px ){
   .row-cards{
     display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    align-content:center;
-    justify-content: center;
     margin: 10px;
   }
 }
