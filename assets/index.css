@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+:root{
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .text-area{
   resize: none;
 }
@@ -70,8 +81,13 @@ body{
   color: #Fff;
 }
 nav{
-  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  /* margin-left: 5rem; */
 }
+
 input{
   text-indent: 10px;
 }
@@ -260,13 +276,40 @@ input{
   }
   .background-img{
       background-image: url(imgs/bg5.svg);
-      background-size: cover;      
+      background-size: cover;
   }
+
   .header{
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
   }
+
+  h2.header{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  .row-cards{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    align-content:center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .p-1{
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .p-2{
+    margin: 5px;
+    border-radius: 10px;
+  }
+
   .bg-purple-dark{
     background-color: #271A2B;
   }
