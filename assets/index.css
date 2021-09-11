@@ -215,7 +215,6 @@ input{
     background-repeat: no-repeat;
     background-size: contain;
   }
-
   .purple-bg{
     background-color: #716EA7;
   }
@@ -322,19 +321,6 @@ input{
     .navbar-toggler.toggler-example {
     cursor: pointer;
     }
-    .dark-blue-text {
-    color: #0A38F5;
-    }
-    .dark-pink-text {
-    color: #AC003A;
-    }
-    .dark-amber-text {
-    color: #ff6f00;
-    }
-    .dark-teal-text {
-    color: #004d40;
-    }
-
 
   @keyframes salute {
     0%   {transform: rotate(0deg);}
@@ -361,6 +347,10 @@ input{
     overflow-x: auto;
   }
 
+  #troll{
+    height: 80px;
+  }
+
   .row-cards::-webkit-scrollbar{
       width: 0;
   }
@@ -372,6 +362,7 @@ input{
 }
 
   @media (min-width: 900px) {
+
     .margin-200{
       margin-bottom:0px;
     }

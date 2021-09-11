@@ -13,6 +13,7 @@
 
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <script src="//unpkg.com/alpinejs" defer></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <meta name="theme-color" content="#7952b3">
@@ -41,6 +42,10 @@
                     <img src="assets/imgs/logo2.png" style="height: 120px" alt="">
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
+                  <select class="selectpicker" data-width="50">
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                </select>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
@@ -63,8 +68,6 @@
                 </div>
               </div>
             </nav>
-            
-
 
               <nav class="nav nav-masthead justify-content-center">
                 <a class="activee" data-scroll  href="#noticias">Noticias</a>
@@ -72,10 +75,15 @@
                 <a class="activee" data-scroll href="#FAQ">FAQ</a>
                 <a class="activee" data-scroll href="#team">Equipo</a>
                 <a class="activee" data-scroll href="#contacto">Contacto</a>
+                <select class="selectpicker">
+                  <option  value="1">Español</option>
+                  <option value="2">English</option>
+              </select>
               </nav>
               
+
+              
           </header>
-    
           <main id="logo" class="px-3">
             <img src="assets/imgs/logo2.png" style="height: 150px" alt="">           
             <h1 class="text-black header">Todo en un mismo lugar.</h1>
@@ -90,6 +98,8 @@
     </section>
 
 <section id="info">
+
+
   <div style="background-image: url(assets/imgs/locaation2.png);" class="p-1 overflow-hidden text-center position-relative p-md-5 purple-section ">
     <div id="info-text" class="p-4 mx-auto my-5 col-md-5">
       <h1 class="header">Locus Systems</h1>
@@ -109,7 +119,7 @@
       </div>
     </div>
   </div>
-  <div id="troll" style="height: 80px;"></div>
+  <div  id="troll"></div>
   </div>
 <div id="cards">
   <div class="row-cards" >

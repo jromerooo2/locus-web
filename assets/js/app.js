@@ -34,6 +34,21 @@ $(document).on('scroll', function() {
     }
   })
 
+
+  $( ".selectpicker" ).change(function() {
+    let lang = $(this).val();    
+    // alert(lang)
+    switch (lang) {
+        case "1":
+            window.location.replace('index.html');
+            break;
+        case "2":            
+            window.location.replace('usindex.html');
+        default:
+            break;
+    }
+  });
+
 //listening to window load and adding 
 //100 ms to make longer the animation
 
@@ -49,7 +64,7 @@ $(window).on("load",function(){
     gsap.to("#info-text", {
         duration: 1,
         y: '-10%'
-    }) }, 10);
+    }) }, 100);
 
 });
 

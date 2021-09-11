@@ -11,6 +11,11 @@
       href="assets/imgs/LS.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <script src="//unpkg.com/alpinejs" defer></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 <meta name="theme-color" content="#7952b3">
 <link rel="stylesheet" href="assets/index.css">
 
@@ -37,6 +42,10 @@
                     <img src="assets/imgs/logo2.png" style="height: 120px" alt="">
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
+                  <select class="selectpicker" data-width="50">
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                </select>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
@@ -52,15 +61,13 @@
                         <a class="activee" data-scroll href="#team">Team</a>
                       </li>
                       <li class="nav-item">
-                        <a class="activee" data-scroll href="#contacto">Contact</a>
+                        <a class="activee" data-scroll href="#contacto">Contact Us</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </nav>
-            
-
 
               <nav class="nav nav-masthead justify-content-center">
                 <a class="activee" data-scroll  href="#noticias">News</a>
@@ -68,16 +75,22 @@
                 <a class="activee" data-scroll href="#FAQ">FAQ</a>
                 <a class="activee" data-scroll href="#team">Team</a>
                 <a class="activee" data-scroll href="#contacto">Contact</a>
+                <select class="selectpicker">
+                  <option value="2">English</option>
+                  <option  value="1">Español</option>
+              </select>
               </nav>
-              <img src="assets/imgs/logo2.png" class="nav-masthead" style="height: 150px" alt="">
+              
+
+              
           </header>
-    
           <main id="logo" class="px-3">
-              <h1 class="text-black header">Everything in the same place</h1>
+            <img src="assets/imgs/logo2.png" style="height: 150px" alt="">           
+            <h1 class="text-black header">Todo en un mismo lugar.</h1>
 
             <h3 class="mb-3 text-black locus-letter">Locus Systems.</h3>
             <p class="lead">
-              <a data-scroll href="#info" class="p-3 btn btn-md slide_right rounded-pill">Learn more</a>
+              <a id="btn-learn" class="p-3 btn btn-custom rounded-pill">Conoce Más</a>
             </p>
           </main>
     
@@ -85,103 +98,112 @@
     </section>
 
 <section id="info">
-  <div style="background-image: url(assets/imgs/locaation.png);" class="p-1 overflow-hidden text-center position-relative p-md-5 purple-section ">
+
+
+  <div style="background-image: url(assets/imgs/locaation2.png);" class="p-1 overflow-hidden text-center position-relative p-md-5 purple-section ">
     <div id="info-text" class="p-4 mx-auto my-5 col-md-5">
       <h1 class="header">Locus Systems</h1>
-      <p class="lead font-weight-normal">
-        System of full managment, that allows control, program and organize your trips, tracking and keeping an eye on the active units.
-      </p>
+      <p class="lead font-weight-normal">Un sistema de administración completo, que te permite controlar, programar y organizar tus viajes, con la opción de darle seguimiento a las unidades de transporte activas.</p>
     </div>
   </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="p-2 overflow-hidden text-center text-black col-md-6 bg-light">
-        <div class="p-3 my-3">
-          <h2 class="header">Location in real time</h2>
-          <p class="lead">Known and track the the location of all the active units.</p>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="text-black">Haz Scroll horizontal para pasar las tarjetas.</h1>
+          <lottie-player class="mx-auto" src="https://assets10.lottiefiles.com/private_files/lf30_z6mrnqdw.json"  background="transparent"  speed="0.5"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
         </div>
-        <img src="assets/imgs/L_S.png" style="height: 320px;"  alt="">
-      </div>
-
-      <div class="p-1 overflow-hidden text-center text-white col-md-6 bg-purple-dark">
-        <div class="py-3 my-3">
-          <h2 class="header">Acces managment</h2>
-          <p class="lead">Mananage the users, their level and and access to the system
-        <img src="assets/imgs/key.png" style="height: 250px; margin-top: 3rem;" alt="">
+        <div class="modal-footer">
+          <button type="button" class="btn purple-bg text-white" id="btn-close" data-dismiss="modal">Cerrar</button>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="p-1 overflow-hidden text-center text-white col-md-6 bg-purple-dark">
-        <div class="py-3 my-3">
-          <h2 class="header">Maintenance control</h2>
-          <p class="lead">
-            Register the maintenance, date, costs and description of them.
-          </p>
-        </div>
-        <img src="assets/imgs/herramientasw.png" style="height: 250px; margin-bottom: 3rem;" alt="">
+  </div>
+  <div  id="troll"></div>
+  </div>
+<div id="cards">
+  <div class="row-cards" >
+    <div class="overflow-hidden  rounded text-center text-black col-xl-3  bg-light cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Ubicación en tiempo real</h2>
+        <p class="lead">Conoce la ubicación de tus unidades en todo momento.</p>
       </div>
-      <div class="p-2 overflow-hidden text-center text-black col-md-6 bg-light">
-        <div class="p-3 my-3">
-          <h2 class="header">Real Stadistics</h2>
-          <p class="lead">
-            Control fuel costs and kilometers traveled per unit. 
-          </p>
-        </div>
-        <img src="assets/imgs/graf.png" style="height: 250px; margin-bottom: 3rem;" alt="">
-      </div>
+      <img src="assets/imgs/L_S.png" style="height: 320px;"  alt="">
     </div>
-    
+    <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Administración de Accesos</h2>
+        <p class="lead">Administra los usuarios y los permisos que obtienen.</p>
+      </div>
+      <img src="assets/imgs/key.png" style="height: 250px; margin-top: 3rem;" alt="">
+    </div>
+    <div class="overflow-hidden rounded text-center text-black col-xl-3 bg-light cards">
+      <div class="p-3 my-3">
+        <h2 class="header">Estadísticas Reales</h2>
+        <p class="lead">Controla gastos de combustible y metros recorridos por unidad.</p>
+      </div>
+      <img src="assets/imgs/graf.png" style="height: 250px; margin-top: 6rem;" alt="">
+    </div>
+    <div class="overflow-hidden rounded text-center text-white col-xl-3 bg-purple-dark cards">
+      <div class="py-3 my-3">
+        <h2 class="header">Control de Mantenimientos</h2>
+        <p class="lead">Registra los mantenimientos con fechas y costes.</p>
+      </div>
+      <img src="assets/imgs/herramientasw.png" style="height: 250px; margin-top: 3rem;" alt="">
+    </div>
+</div>
+</div>
 </div>
 
 </section>
 
 <section id="noticias" class="mt-4">
   <div class=" d-flex align-items-center">
-  <div class="container ">
+  <div class="container-fluid">
     <div class="p-3 text-center text-white rounded jumbotron d-md-flex justify-content-center align-items-center p-md-5 purple-section">
       <div class="col-md-8">
-        <h1 class="display-4 font-italic ">What does the world say about us?</h1>
+        <h1 class="display-4 font-italic ">¿Que dice el mundo sobre nosotros?</h1>
       </div>
       <div class="col-md-4">
         <img class="flex-auto look" style="height:200px ;" src="assets/imgs/earth.png"  alt="Card image cap">
       </div>
 
     </div>
+  
 
     <div class="mb-2 row">
       <div class="col-md-6">
         <div class="mb-4 card flex-lg-row box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start text-start">
-            <strong class="mb-2 d-inline-block text-warning">Security</strong>
+            <strong class="mb-2 d-inline-block text-warning">Seguridad</strong>
             <h3 class="mb-0 text-black">
-              Now more secure than never!
+              ¡Ahora aún más seguros!
             </h3>
-            <pre class="m-1 text-muted">
-Update 2.0 with protection and new features
-against hacking.
-</pre>
+            <p class="m-1 text-muted">
+Actualización 2.0, con protección a nuevos 
+ataques informáticos.
+            </p>
             <img class="flex-auto mx-auto d-none d-md-block" src="assets/imgs/locked.png" height="200px" alt="Card image cap">
 <!-- 
             <p class="mb-auto text-black card-text">This is a wider card with supporting text below as a natural lead-in to additional contentasdadad.</p>
-            --><a href="#">Read more...</a> 
+            --><a href="#">Continuar leyendo</a> 
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="mb-4 card flex-lg-row box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start text-start">
-            <strong class="mb-2 d-inline-block text-success">Life-style</strong>
+            <strong class="mb-2 d-inline-block text-success">Estilo de Vida</strong>
             <h3 class="mb-0">
-              <a class="text-dark text-decoration-none" href="#">Improve you productivity!</a>
+              <a class="text-dark text-decoration-none" href="#">Incrementa tu productividad</a>
             </h3>
-            <pre class="m-1 text-muted">
-Our last update with new functionalities to help you 
-improve your productivity
-</pre>
+            <p class="m-1 text-muted">
+Nuestra última actualización con nuevas funcionalidades
+para ayudarte a ser aún más productivo. 
+            </p>
             <img class="flex-auto mx-auto d-none d-md-block" src="assets/imgs/prod.png" height="200px" alt="Card image cap">
             <!-- <p class="mb-auto text-black card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p> -->
-            <a href="#" class="">Read more...</a>
+            <a href="#" class="">Continuar leyendo</a>
           </div>
         </div>
       </div>
@@ -193,9 +215,9 @@ improve your productivity
 <section class="vh-50">
   <div class="container">
     <div class="row">
-      <h1 class="text-dark-purple display-2 mt-2">Technical Manual</h1>
+      <h1 class="text-dark-purple display-2 mt-2">Manual Técnico</h1>
       <div class="col">
-        <p class="text-black ">Download the manual and give our system a better use!</p>
+        <p class="text-black ">¡Descarga el manual del  sistema para darle un mejor uso!</p>
         <a href="assets/docs/manual.pdf" download class="btn btn-outline-dark">Descargar <i class="fa fa-download"></i></a>
       </div>
     </div>
@@ -203,32 +225,30 @@ improve your productivity
 </section>
 
 <section id="FAQ" class=" vh-50">
-  <h1 class="text-dark-purple display-2">Frequently Asqued Questions- locus:</h1>
+  <h1 class="text-dark-purple display-2">Preguntas Frecuentes - locus:</h1>
   <div class="d-lg-flex align-items-center justify-content-center">
     <img class="float2" src="assets/imgs/like.png" height="300px" alt="">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="text-purple">Why use Locus System?</h1>
+          <h1 class="text-purple">¿Por qué ocupar Locus Systems?</h1>
           <p class="text-muted">
-            We care about the quality of the proccess, making it friendly, fast and secure.
+            Por que Locus se preocupa por la calidad en cada proceso, haciéndolo un sistema amigable, rápido y seguro. 
           </p>
         </div>
         <div class="col-lg-6">
-          <h1 class="text-purple">For whom the system is targeted?</h1>
-          <p class="text-muted">Locus is aimed at companies that travel frequently and need quality software to control them.</p>
+          <h1 class="text-purple">¿Para quien va dirigido el sistema?</h1>
+          <p class="text-muted">Locus está dirigido a las empresas que se dedican a realizar viajes frecuentemente y necesitan un software de calidad para controlarlos.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="text-purple">Does the system has a cost?</h1>
-          <p class="text-muted">The creation of the system had an educational purpose, so its price is not defined, if you are interested in the system contact us in the corresponding section.</p>
+          <h1 class="text-purple">¿El sistema tiene algún costo?</h1>
+          <p class="text-muted">La creación del sistema tuvo un propósito educativo, por lo que su precio no esta definido,  si esta interesado en el sistema contáctenos en el apartado correspondiente.</p>
         </div>
         <div class="col-lg-6">
-          <h1 class="text-purple">What is the purpose of the system?</h1>
-          <p class="text-muted">
-            The purpose of the system is to ease the managment of the transport units, drivers, profits, costs and maintenance of the enterprise.
-          </p>
+          <h1 class="text-purple">¿Cual es el proposito del sistema?</h1>
+          <p class="text-muted">El propósito del sistema es facilitar la gestión de unidades de transporte, conductores, ganancias, costes y mantenimientos que genere la empresa.</p>
         </div>
       </div>      
     </div>
@@ -236,16 +256,16 @@ improve your productivity
   </div>
 
     <h3 class="text-muted mt-5">
-      Do you have any other question?
+      ¿Tienes otra pregunta?
     </h3>
-    <p class="text-muted"><a class="text-decoration-none" href="#contacto">Contact us.</a></p>
+    <p class="text-muted"><a class="text-decoration-none" href="#contacto">Comunicate con nosotros</a></p>
 
 </section>
 
 <section class="py-5 text-center bg-hand" id="team">
   <div class="container">
     <div class="my-2 header">
-      <p class="mt-3 mb-4 locus-letter display-3 text-dark-purple fw-bold">Meet us🏁.</p>
+      <p class="mt-3 mb-4 locus-letter display-3 text-dark-purple fw-bold">Conócenos🏁.</p>
     </div>
     <div class="row">
       <div class="col-md-6 col-lg-3 ">
@@ -253,7 +273,7 @@ improve your productivity
           <img src="assets/imgs/kevin.png" class="rounded-circle img-fluid img-thumbnail" alt="image1">
           <div class="mt-2 content">
             <h4  class="text-dark-purple">Kevin Rivas</h4>
-            <p class="text-muted">Programmer</p>
+            <p class="text-muted">Programador</p>
           </div>
         </div>
       </div>
@@ -262,7 +282,7 @@ improve your productivity
           <img src="assets/imgs/santi.png" class="rounded-circle img-fluid img-thumbnail" alt="image1">
           <div class="mt-2 content">
             <h4  class="text-dark-purple">Santiago Merino</h4>
-            <p class="text-muted">Programmer</p>
+            <p class="text-muted">Programador</p>
           </div>
         </div>
       </div>
@@ -271,7 +291,7 @@ improve your productivity
           <img src="assets/imgs/juancho5.png" class="rounded-circle img-fluid img-thumbnail" alt="image1">
           <div class="mt-2 content">
             <h4  class="text-dark-purple">Juan Ramos</h4>
-            <p class="text-muted">Programmer, Web Developer</p>
+            <p class="text-muted">Programador, Desarrollador Web</p>
           </div>
         </div>
       </div>
@@ -280,8 +300,7 @@ improve your productivity
           <img src="assets/imgs/david.png" class="rounded-circle img-fluid img-thumbnail" alt="image1">
           <div class="mt-2 content">
             <h4  class="text-dark-purple">David Flores</h4>
-            <p class="text-muted">Programmer
-            </p>
+            <p class="text-muted">Programador</p>
           </div>
         </div>
       </div>
@@ -291,7 +310,7 @@ improve your productivity
             <img src="assets/imgs/guille.png" class="rounded-circle img-fluid img-thumbnail" alt="image1">
             <div class="mt-2 content">
               <h4  class="text-dark-purple">Guillermo Castillo</h4>
-              <p class="text-muted">Programmer</p>
+              <p class="text-muted">Programador</p>
             </div>
           </div>
         </div>
@@ -302,8 +321,8 @@ improve your productivity
 </section>
 <section id="contacto" class="mt-5">
   <div class="d-block">
-    <h1 class="mt-3 mb-4 locus-letter display-2 text-dark-purple fw-bold">Salute us!</h1>
-    <p class="text-center text-black ">We would love to know about you, we will reply <a class="text-purple text-decoration-none" href="https://www.significados.com/asap/" target="_blank">ASAP</a>.</p>
+    <h1 class="mt-3 mb-4 locus-letter display-2 text-dark-purple fw-bold">¡Salúdanos!</h1>
+    <p class="text-center text-black ">Nos gustaría escuchar de ti, ponte en contacto con nosotros, responderemos <a class="text-purple text-decoration-none" href="https://www.significados.com/asap/" target="_blank">ASAP</a>.</p>
   </div>
 <div class="text-center d-md-flex align-items-center justify-content-center">
   <img class="hand" src="assets/imgs/2.png" alt="">
@@ -312,14 +331,14 @@ improve your productivity
 
         <form action="mailto:you@yourdmainhere.com" method="post" autocomplete="off">
             <div class="form-group">
-            <input class="rounded-pill" name="name" placeholder="Name" type="text"><br>
-            <input class="mt-3 rounded-pill" placeholder="E-Mail" name="email" type="text"><br>
-            <input class="mt-3 rounded-pill" placeholder="Motive" name="subject" type="text"><br>
-            <textarea class="mt-3 rounded text-area" name="message" id="" cols="20" rows="5" placeholder="Message"></textarea>
+            <input class="rounded-pill" name="name" placeholder="Tu Nombre" type="text"><br>
+            <input class="mt-3 rounded-pill" placeholder="Tu Correo" name="email" type="text"><br>
+            <input class="mt-3 rounded-pill" placeholder="Motivo" name="subject" type="text"><br>
+            <textarea class="mt-3 rounded text-area" name="message" id="" cols="20" rows="5" placeholder="Mensaje"></textarea>
             </div>
           
           <button class="p-3 m-2 btn slide_right2 rounded-pill" id="btn-custom2">
-            Send <i class="fa fa-send"></i>
+            Enviar <i class="fa fa-send"></i>
           </button>        
         </form>
       </div>
@@ -344,7 +363,6 @@ improve your productivity
 
 
 <!--jquery no esta muerto😡 -->
-<!-- mas o menos si JAJAJAJJA -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
