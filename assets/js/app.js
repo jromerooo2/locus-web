@@ -1,7 +1,7 @@
 document.getElementById("logo").style.display = "none"
 
-var btn = $('#button');
 
+var btn = $('#button');
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
@@ -9,6 +9,7 @@ $(window).scroll(function() {
     btn.removeClass('show');
   }
 });
+
 
 btn.on('click', function(e) {
   e.preventDefault();
@@ -44,6 +45,10 @@ $(document).on('scroll', function() {
             break;
         case "2":            
             window.location.replace('usindex.html');
+            break;
+        case "3":            
+            window.location.replace('frindex.html');
+            break;
         default:
             break;
     }
@@ -53,6 +58,8 @@ $(document).on('scroll', function() {
 //100 ms to make longer the animation
 
 $(window).on("load",function(){
+    var userLang = navigator.language || navigator.userLanguage; 
+alert ("The language is: " + userLang);
     setTimeout(function(){    
      $(".loader-wrapper").fadeOut("slow");
     document.getElementById("logo").style.display = "block"
