@@ -127,13 +127,13 @@ input {
 
 
 .demoimg{
-  animation: demo 7s infinite
+  animation: demo 20s infinite
 }
 .demoimg2{
-  animation: demo2 7s infinite
+  animation: demo2 20s infinite
 }
 .demoimg3{
-  animation: demo3 7s infinite
+  animation: demo3 20s infinite
 }
 .loader-wrapper {
     width: 100%;
@@ -420,45 +420,54 @@ ul {
 }
 @keyframes demo {
   0% {
-    display: block;
+    transform: translate3d(0);
   }
-  35%{
-    transform: translateX(7%)
+  25%{
+    transform: translate3d(12px, -12px, -25px);
   }
-  80% {
-      transform: translateY(7%)
+  50% {
+    transform: translate3d(-1.4rem, 0, 0.5rem);
+  }
+  75%{
+    transform: translate3d(2.5ch, 0.2in, 2.5em);
   }
   100% {
-      display: block
+    transform: translate3d(0);
   }
 }
 @keyframes demo2 {
-  0% {
-    display: block;
-  }
-  35%{
-    transform: translateX(-7%)
-  }
-  80% {
-      transform: translateY(-7%)
-  }
-  100% {
-      display: block
-  }
+    0% {
+        transform: translate3d(0);
+      }
+      25%{
+        transform: translate3d(12px, -12px, -25px);
+      }
+      50% {
+        transform: translate3d(-1.4rem, 0, 0.5rem);
+      }
+      75%{
+        transform: translate3d(2.5ch, 0.2in, 2.5em);
+      }
+      100% {
+        transform: translate3d(0);
+      }
 }
 @keyframes demo3 {
-  0% {
-    display: block;
-  }
-  35%{
-    transform: translateX(-7%)
-  }
-  60% {
-      transform: translateX(-7%)
-  }
-  100% {
-      display: block
-  }
+    0% {
+        transform: translate3d(0);
+      }
+      25%{
+        transform: translate3d(12px, -12px, -25px);
+      }
+      50% {
+        transform: translate3d(-1.4rem, 0, 0.5rem);
+      }
+      75%{
+        transform: translate3d(2.5ch, 0.2in, 2.5em);
+      }
+      100% {
+        transform: translate3d(0);
+      }
 }
 
 @media(max-width:900px) {
