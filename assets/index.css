@@ -291,7 +291,14 @@ input{
     .row-cards{
       display: flex !important; 
     }
-
+    li{
+      list-style: none;
+      text-align: initial;
+    }
+    ul{
+      margin: 0;
+      padding:0;
+    }
   .p-1{
     margin: 5px;
     border-radius: 10px;
@@ -299,6 +306,9 @@ input{
   .p-2{
     margin: 5px;
     border-radius: 10px;
+  }
+  .card-body{
+    color: #000;
   }
 
   .bg-purple-dark{
