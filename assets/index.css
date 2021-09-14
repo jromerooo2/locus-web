@@ -340,6 +340,9 @@ input{
   }
 
 @media(max-width:900px ){
+  .b-devices{
+    display: none;
+  }
   .row-cards{
     max-height: 700px;
     max-width: auto;
@@ -362,7 +365,6 @@ input{
 }
 
   @media (min-width: 900px) {
-
     .margin-200{
       margin-bottom:0px;
     }

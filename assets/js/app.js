@@ -1,6 +1,5 @@
 document.getElementById("logo").style.display = "none"
 
-
 var btn = $('#button');
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
@@ -56,11 +55,8 @@ $(document).on('scroll', function() {
 
 //listening to window load and adding 
 //100 ms to make longer the animation
-
 $(window).on("load",function(){
-    var userLang = navigator.language || navigator.userLanguage; 
-alert ("The language is: " + userLang);
-    setTimeout(function(){    
+    setTimeout(function(){ 
      $(".loader-wrapper").fadeOut("slow");
     document.getElementById("logo").style.display = "block"
     gsap.to("#logo", {
