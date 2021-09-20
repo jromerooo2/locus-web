@@ -31,13 +31,13 @@ function toPX(e) {
             if (screen.width <= 900) {
                 gsap.to(".row-cards2", {
                     x:"-300%",
-                    yoyo:true,
+                    // yoyo:true,
                     repeat: -1, 
                     duration:15 
                 })
             }else{
                 gsap.to(".row-cards2", {
-                    x:"-50%",
+                    x:"-54%",
                     yoyo:true,
                     repeat: -1, 
                     duration:12 
