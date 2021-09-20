@@ -336,6 +336,7 @@ h2.header {
     display: flex!important;
 }
 .cards2{
+    margin: 0.5rem;
     border-radius: 1.75rem;
 }
 
@@ -362,7 +363,10 @@ ul {
 .card-body {
     color: #000
 }
-
+.text{
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
 .bg-purple-dark {
     background-color: #271a2b
 }
@@ -387,6 +391,7 @@ ul {
 .navbar-toggler.toggler-example {
     cursor: pointer
 }
+
 
 @keyframes salute {
     0% {
@@ -479,6 +484,9 @@ ul {
 }
 
 @media(max-width:900px) {
+    .text{
+        padding:0rem;
+    }
     .b-devices {
         display: none
     }
