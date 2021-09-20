@@ -483,6 +483,22 @@ ul {
       }
 }
 
+@media(max-width:1197px) {
+    .row-cards2 {
+        max-height: 700px;
+        max-width: auto;
+    }
+    
+    .row-cards2::-webkit-scrollbar {
+        width: 0
+    }
+    .cards2 {
+        width: 20px;
+        min-width:200px;
+        height: 200px;
+        margin: 0.5rem;
+    }
+}
 @media(max-width:900px) {
     .text{
         padding:0rem;
@@ -511,20 +527,6 @@ ul {
         margin-right: 2px
     }
     
-    .row-cards2 {
-        max-height: 700px;
-        max-width: auto;
-    }
-    
-    .row-cards2::-webkit-scrollbar {
-        width: 0
-    }
-    .cards2 {
-        width: 20px;
-        min-width:200px;
-        height: 200px;
-        margin: 0.5rem;
-    }
 }
 
 @media (min-width:900px) {
