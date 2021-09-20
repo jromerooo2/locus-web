@@ -127,13 +127,13 @@ input {
 
 
 .demoimg{
-  animation: demo 20s infinite
+  animation: demo 15s infinite
 }
 .demoimg2{
-  animation: demo2 20s infinite
+  animation: demo2 15s infinite
 }
 .demoimg3{
-  animation: demo3 20s infinite
+  animation: demo3 15s infinite
 }
 .loader-wrapper {
     width: 100%;
@@ -233,7 +233,6 @@ input {
     border-color: #716ea7;
     color: #000
 }
-
 .purple-section {
     background-color: #716ea7;
     background-attachment: fixed;
@@ -243,9 +242,12 @@ input {
 }
 
 .purple-bg {
+    height: 400px;
     background-color: #716ea7
 }
-
+.cards-section-2{
+    overflow: hidden;
+}
 .vh-full {
     height: 100vh
 }
@@ -330,6 +332,12 @@ h2.header {
 .row-cards {
     display: flex !important
 }
+.row-cards2{
+    display: flex!important;
+}
+.cards2{
+    border-radius: 1.75rem;
+}
 
 li {
     list-style: none;
@@ -395,6 +403,9 @@ ul {
     }
 }
 
+.cards2{
+    margin-right: 0.5rem;
+}
 @keyframes float {
     0% {
         display: block
@@ -477,22 +488,37 @@ ul {
     .demoimg{
       animation:none
         }
-    .row-cards {
-        max-height: 700px;
-        max-width: auto;
-        display: flex !important;
-        overflow-x: auto
-    }
-    #troll {
-        height: 80px
-    }
-    .row-cards::-webkit-scrollbar {
-        width: 0
-    }
+
+        .row-cards {
+            max-height: 700px;
+            max-width: auto;
+            display: flex !important;
+            overflow-x: auto
+        }
+        
+        .row-cards::-webkit-scrollbar {
+            width: 0
+        }
+        
     .cards {
         min-width: 390px;
         height: 600px;
         margin-right: 2px
+    }
+    
+    .row-cards2 {
+        max-height: 700px;
+        max-width: auto;
+    }
+    
+    .row-cards2::-webkit-scrollbar {
+        width: 0
+    }
+    .cards2 {
+        width: 20px;
+        min-width:200px;
+        height: 200px;
+        margin: 0.5rem;
     }
 }
 
