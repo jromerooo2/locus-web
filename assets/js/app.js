@@ -30,10 +30,10 @@ function toPX(e) {
             $(".loader-wrapper").fadeOut("slow"), (document.getElementById("logo").style.display = "block"), gsap.to("#logo", { duration: 1, y: toPX("-26vh") }), gsap.to("#info-text", { duration: 1, y: "-10%" });
             if (screen.width <= 900) {
                 gsap.to(".row-cards2", {
-                    x:"-520%",
+                    x:"-320%",
                     yoyo:true,
                     repeat: -1, 
-                    duration:9 
+                    duration:15 
                 })
             }else{
                 gsap.to(".row-cards2", {
