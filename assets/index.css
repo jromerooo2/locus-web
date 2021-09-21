@@ -334,6 +334,21 @@ h2.header {
 .row-cards {
     display: flex !important
 }
+.sv-dropdown{
+    background-repeat:no-repeat;
+    background-position: 80%;
+    background-image: url(https://www.countryflags.io/sv/flat/32.png);
+}
+.us-dropdown{
+    background-repeat:no-repeat;
+    background-position: 80%;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr-dropdown{
+    background-repeat:no-repeat;
+    background-position: 80%;
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
 body {
     overflow-x: hidden;
 }
