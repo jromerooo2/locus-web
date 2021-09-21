@@ -63,22 +63,22 @@ var projectOne = document.getElementById("project1");
 var quote = projectOne.querySelectorAll(".project");
 var imgLength = quote.length;
 
-t = 0;
+t = 20;
 var gap = 20;
-var tot = 0;
+var tot = -10;
 
 for (var i = 0; i < imgLength; i++) {
   var img = quote[i];
 
   if (i == 0) {
-    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+    img.style.transform = "translate3D(-1px, 0%, 0)";
   }
 
   if (i > 0) {
     var prev = quote[i - 1];
     var prevWidth = prev.clientWidth + gap;
     tot += prevWidth;
-    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+    img.style.transform = "translate3D(-1px, 0%, 0)";
   }
 }
 
