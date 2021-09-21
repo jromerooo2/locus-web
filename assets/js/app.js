@@ -105,7 +105,7 @@ function scroll() {
   projectOne.style.transform = "translate3D(" + t + "px, 0, 0)";
   requestAnimationFrame(scroll);
 }
-requestAnimationFrame(scroll);
+requestAnimationFrame(scroll)
 
 
 
