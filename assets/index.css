@@ -346,6 +346,9 @@ body {
     top: 50%;
     border-radius: 1.75rem;
 }
+.card-body{
+    color: #000;
+}
 .project{
     height: 200px;
     padding: 1rem;
