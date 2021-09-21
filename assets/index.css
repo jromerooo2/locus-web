@@ -334,13 +334,22 @@ h2.header {
 .row-cards {
     display: flex !important
 }
-.row-cards2{
-    display: flex!important;
+body {
+    overflow-x: hidden;
 }
-.cards2{
-    padding: 1rem;
-    margin: 0.5rem;
+.projects {
+    display: flex;
+    height: 30vh;
+}
+.projects > div {
+    position: absolute;
+    top: 50%;
     border-radius: 1.75rem;
+}
+
+.project{
+    padding: 1rem;
+    margin: 2px;
 }
 
 li {
@@ -353,19 +362,6 @@ ul {
     padding: 0
 }
 
-.p-1 {
-    margin: 5px;
-    border-radius: 10px
-}
-
-.p-2 {
-    margin: 5px;
-    border-radius: 10px
-}
-
-.card-body {
-    color: #000
-}
 .text{
     margin: 0.5rem;
     padding: 0.2rem;
@@ -486,22 +482,6 @@ ul {
       }
 }
 
-@media(max-width:1197px) {
-    .row-cards2 {
-        max-height: 700px;
-        max-width: auto;
-    }
-    
-    .row-cards2::-webkit-scrollbar {
-        width: 0
-    }
-    .cards2 {
-        min-width:300px;
-        height: 200px;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-}
 @media(max-width:900px) {
     .text{
         padding:0rem;

@@ -36,12 +36,12 @@ function toPX(e) {
                     duration:15 
                 })
             }else{
-                gsap.to(".row-cards2", {
-                    x:"-54%",
-                    yoyo:true,
-                    repeat: -1, 
-                    duration:12 
-                })
+                // gsap.to(".row-cards2", {
+                //     x:"-54%",
+                //     // yoyo:true,
+                //     repeat: -1, 
+                //     duration:12 
+                // })
             }
         }, 100);
     });
@@ -58,6 +58,56 @@ $(window).scroll(() => {
             }, 450)
         );
 });
+
+var projectOne = document.getElementById("project1");
+var quote = projectOne.querySelectorAll(".project");
+var imgLength = quote.length;
+
+t = 0;
+var gap = 20;
+var tot = 0;
+
+for (var i = 0; i < imgLength; i++) {
+  var img = quote[i];
+
+  if (i == 0) {
+    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+  }
+
+  if (i > 0) {
+    var prev = quote[i - 1];
+    var prevWidth = prev.clientWidth + gap;
+    tot += prevWidth;
+    img.style.transform = "translate3D(" + tot + "px, -50%, 0)";
+  }
+}
+
+function scroll() {
+
+  for (var i = 0; i < quote.length; i++) {
+    var img = quote[i];
+    var distLeft = img.getBoundingClientRect().left;
+
+    if (distLeft < 0 - img.clientWidth) {
+      var index = i - 1;
+      if (index < 0) {
+        index = imgLength - 1;
+      }
+
+      var lastPos = quote[index].style.transform.split(/[()]/)[1];
+      var lastX = lastPos.split(",")[0];
+      newX = parseInt(lastX) + quote[index].clientWidth + gap;
+
+      img.style.transform = "translate3D(" + newX + "px, -50%, 0)";
+    }
+  }
+  t -= 1;
+  projectOne.style.transform = "translate3D(" + t + "px, 0, 0)";
+  requestAnimationFrame(scroll);
+}
+requestAnimationFrame(scroll);
+
+
 
 
 
